@@ -2,7 +2,8 @@ import React from "react";
 import { StyleSheet } from "react-native";
 
 import EditScreenInfo from "../components/EditScreenInfo";
-import { Text, View } from "../components/Themed";
+import { View } from "../components/Themed";
+import { StyledText } from "../components/StyledText";
 import { RootStackScreenProps } from "../types";
 
 export default function HomeScreen({
@@ -10,7 +11,7 @@ export default function HomeScreen({
 }: RootStackScreenProps<"Root">) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
+      <StyledText style={styles.title}>Home</StyledText>
       <View
         style={styles.separator}
         lightColor="#eee"
@@ -29,7 +30,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontFamily: "starjedi",
   },
   separator: {
     marginVertical: 30,
