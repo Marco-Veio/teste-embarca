@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledText component renders correctly 1`] = `
+exports[`Card component renders correctly 1`] = `
 <View
   accessible={true}
   collapsable={false}
@@ -20,6 +20,7 @@ exports[`StyledText component renders correctly 1`] = `
       "justifyContent": "space-evenly",
       "opacity": 1,
       "textAlign": "center",
+      "width": 300,
     }
   }
 >
@@ -64,6 +65,7 @@ exports[`StyledText component renders correctly 1`] = `
           Object {
             "fontSize": 15,
             "marginBottom": 5,
+            "textAlign": "center",
           },
         ]
       }

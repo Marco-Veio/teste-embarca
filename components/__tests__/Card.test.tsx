@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 
 import { Card } from "../Card";
 
-describe("StyledText component", () => {
+describe("Card component", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(
