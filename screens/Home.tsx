@@ -1,7 +1,6 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { FlatList, StyleSheet } from "react-native";
 
-import EditScreenInfo from "../components/EditScreenInfo";
 import { View } from "../components/Themed";
 import { StyledText } from "../components/StyledText";
 import { RootStackScreenProps } from "../types";
@@ -9,15 +8,25 @@ import { RootStackScreenProps } from "../types";
 export default function HomeScreen({
   navigation,
 }: RootStackScreenProps<"Root">) {
+  const data = [{ name: "Luke Skywalker" }];
+
   return (
     <View style={styles.container}>
-      <StyledText style={styles.title}>Home</StyledText>
+      <StyledText style={styles.title}>Star Wars</StyledText>
       <View
         style={styles.separator}
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <EditScreenInfo path="/screens/HomeScreen.tsx" />
+      <View style={styles.listContainer}>
+        <FlatList
+          data={data}
+          contentContainerStyle={styles.list}
+          renderItem={({ item }) => <StyledText>{item.name}</StyledText>}
+          keyExtractor={(item) => item.name}
+          horizontal
+        />
+      </View>
     </View>
   );
 }
@@ -29,11 +38,20 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: {
-    fontSize: 20,
+    fontSize: 40,
   },
   separator: {
     marginVertical: 30,
     height: 1,
     width: "80%",
+  },
+  listContainer: {
+    height: "60%",
+  },
+  list: {
+    width: 300,
+    height: 100,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
