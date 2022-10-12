@@ -35,8 +35,9 @@ export function Card({ person, navigation }: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    height: 400,
     flex: 1,
+    height: 400,
+    width: 300,
     alignItems: "center",
     justifyContent: "space-evenly",
     textAlign: "center",
@@ -47,6 +48,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 15,
     marginBottom: 5,
+    textAlign: "center",
   },
   numberDetails: {
     textAlign: "center",
