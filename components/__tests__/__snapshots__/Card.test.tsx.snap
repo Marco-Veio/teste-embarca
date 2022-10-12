@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledText component renders correctly 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "height": 400,
+      "justifyContent": "space-evenly",
+      "opacity": 1,
+      "textAlign": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Array [
+          Object {
+            "fontSize": 20,
+          },
+          Object {
+            "color": "black",
+            "fontFamily": "starjedi",
+            "textShadowColor": "gold",
+            "textShadowRadius": 2,
+          },
+        ],
+      ]
+    }
+  >
+    Luke Skywalker
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "fontSize": 15,
+            "marginBottom": 5,
+          },
+        ]
+      }
+    >
+      Physical Aspects:
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Height: 
+      172
+       cm
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Mass: 
+      77
+       kg
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "center",
+            "textTransform": "capitalize",
+          },
+        ]
+      }
+    >
+      Hair Color: 
+      blond
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "center",
+            "textTransform": "capitalize",
+          },
+        ]
+      }
+    >
+      Skin Color: 
+      fair
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "center",
+            "textTransform": "capitalize",
+          },
+        ]
+      }
+    >
+      Eye Color: 
+      blue
+    </Text>
+  </View>
+</View>
+`;
