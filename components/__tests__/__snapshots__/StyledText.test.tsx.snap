@@ -18,5 +18,7 @@ exports[`StyledText component renders correctly 1`] = `
       ],
     ]
   }
-/>
+>
+  Star Wars
+</Text>
 `;
