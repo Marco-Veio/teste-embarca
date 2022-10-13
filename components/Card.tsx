@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    textTransform: "lowercase",
   },
   subtitle: {
     fontSize: 15,

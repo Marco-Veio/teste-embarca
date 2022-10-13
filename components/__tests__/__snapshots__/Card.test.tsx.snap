@@ -76,6 +76,7 @@ exports[`Card component renders correctly 1`] = `
             Array [
               Object {
                 "fontSize": 20,
+                "textTransform": "lowercase",
               },
               Object {
                 "color": "black",
