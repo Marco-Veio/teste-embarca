@@ -14,7 +14,9 @@ interface Props extends Partial<RootStackScreenProps<"Root">> {
 export function Card({ person, index, navigation }: Props) {
   return (
     <TouchableOpacity
-      onPress={() => navigation?.navigate("Modal")}
+      onPress={() => {
+        navigation?.navigate("Modal", { person });
+      }}
       style={styles.container}
     >
       <ImageBackground

@@ -15,7 +15,11 @@ import { ColorSchemeName } from "react-native";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
 import HomeScreen from "../screens/Home";
+
+import { StyledText } from "../components/StyledText";
+
 import { RootStackParamList } from "../types";
+
 import LinkingConfiguration from "./LinkingConfiguration";
 
 export default function Navigation({
@@ -53,7 +57,17 @@ function RootNavigator() {
         options={{ title: "Oops!" }}
       />
       <Stack.Group screenOptions={{ presentation: "modal" }}>
-        <Stack.Screen name="Modal" component={ModalScreen} />
+        <Stack.Screen
+          name="Modal"
+          component={ModalScreen}
+          options={({ route }) => ({
+            headerTitle: () => (
+              <StyledText style={{ fontSize: 20 }}>
+                {route.params.person.name.toLowerCase()}
+              </StyledText>
+            ),
+          })}
+        />
       </Stack.Group>
     </Stack.Navigator>
   );
