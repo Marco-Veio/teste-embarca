@@ -55,7 +55,9 @@ export default function ModalScreen({ route }: RootStackScreenProps<"Modal">) {
           darkColor="rgba(255,255,255,0.1)"
         />
         <Text style={styles.title}>Gender:</Text>
-        <Text style={styles.text}>{route.params.person.gender}</Text>
+        <Text style={[styles.text, styles.capitalize]}>
+          {route.params.person.gender}
+        </Text>
         <View
           style={styles.separator}
           lightColor="#eee"
@@ -94,7 +96,7 @@ export default function ModalScreen({ route }: RootStackScreenProps<"Modal">) {
         />
         <Text style={styles.title}>Vehicles:</Text>
         {vehicles.map((vehicle) => (
-          <Text key={vehicle} style={styles.text}>
+          <Text key={vehicle} style={[styles.text, styles.capitalize]}>
             {vehicle}
           </Text>
         ))}
@@ -106,7 +108,7 @@ export default function ModalScreen({ route }: RootStackScreenProps<"Modal">) {
         />
         <Text style={styles.title}>Starships:</Text>
         {starships.map((starship) => (
-          <Text key={starship} style={styles.text}>
+          <Text key={starship} style={[styles.text, styles.capitalize]}>
             {starship}
           </Text>
         ))}
@@ -135,6 +137,9 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 15,
+  },
+  capitalize: {
+    textTransform: "capitalize",
   },
   separator: {
     marginVertical: 20,
