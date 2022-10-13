@@ -17,7 +17,7 @@ export function Card({ person, index, navigation }: Props) {
       onPress={() => {
         navigation?.navigate("Modal", { person });
       }}
-      style={styles.container}
+      style={styles.root}
     >
       <ImageBackground
         source={{
@@ -53,13 +53,22 @@ export function Card({ person, index, navigation }: Props) {
 }
 
 const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    height: 400,
+    width: 300,
+    alignItems: "center",
+    justifyContent: "space-between",
+    textAlign: "center",
+  },
   container: {
     flex: 1,
     height: 400,
     width: 300,
     alignItems: "center",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
     textAlign: "center",
+    paddingVertical: 20,
   },
   title: {
     fontSize: 20,
