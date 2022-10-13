@@ -8,7 +8,6 @@ describe("Card component", () => {
     const tree = renderer
       .create(
         <Card
-          index={0}
           person={{
             name: "Luke Skywalker",
             height: "172",
