@@ -35,8 +35,13 @@ export default function HomeScreen({
           <FlatList
             data={people}
             keyExtractor={(item) => item.name}
-            renderItem={({ item }) => (
-              <Card navigation={navigation} route={route} person={item} />
+            renderItem={({ item, index }) => (
+              <Card
+                navigation={navigation}
+                route={route}
+                person={item}
+                index={index}
+              />
             )}
             horizontal
             showsHorizontalScrollIndicator={false}
