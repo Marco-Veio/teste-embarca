@@ -5,7 +5,7 @@ import { StyledText } from "../StyledText";
 
 describe("StyledText component", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<StyledText />).toJSON();
+    const tree = renderer.create(<StyledText>Star Wars</StyledText>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
