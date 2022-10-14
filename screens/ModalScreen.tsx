@@ -48,23 +48,29 @@ export default function ModalScreen({ route }: RootStackScreenProps<"Modal">) {
         <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
 
         <Text style={styles.title}>Birth Year:</Text>
-        <Text style={styles.text}>{route.params.person.birth_year}</Text>
-        <View
-          style={styles.separator}
-          lightColor="#eee"
-          darkColor="rgba(255,255,255,0.1)"
-        />
-        <Text style={styles.title}>Gender:</Text>
-        <Text style={[styles.text, styles.capitalize]}>
-          {route.params.person.gender}
+        <Text
+          style={
+            route.params.person.birth_year === "unknown"
+              ? styles.capitalize
+              : styles.text
+          }
+        >
+          {route.params.person.birth_year}
         </Text>
         <View
           style={styles.separator}
           lightColor="#eee"
           darkColor="rgba(255,255,255,0.1)"
         />
+        <Text style={styles.title}>Gender:</Text>
+        <Text style={styles.capitalize}>{route.params.person.gender}</Text>
+        <View
+          style={styles.separator}
+          lightColor="#eee"
+          darkColor="rgba(255,255,255,0.1)"
+        />
         <Text style={styles.title}>Home:</Text>
-        <Text style={styles.text}>{home}</Text>
+        <Text style={styles.capitalize}>{home}</Text>
         <View
           style={styles.separator}
           lightColor="#eee"
@@ -88,7 +94,7 @@ export default function ModalScreen({ route }: RootStackScreenProps<"Modal">) {
             {specie}
           </Text>
         ))}
-        {!species.length && <Text style={styles.text}>Unkown</Text>}
+        {!species.length && <Text style={styles.text}>Unknown</Text>}
         <View
           style={styles.separator}
           lightColor="#eee"
@@ -96,7 +102,7 @@ export default function ModalScreen({ route }: RootStackScreenProps<"Modal">) {
         />
         <Text style={styles.title}>Vehicles:</Text>
         {vehicles.map((vehicle) => (
-          <Text key={vehicle} style={[styles.text, styles.capitalize]}>
+          <Text key={vehicle} style={styles.capitalize}>
             {vehicle}
           </Text>
         ))}
@@ -108,7 +114,7 @@ export default function ModalScreen({ route }: RootStackScreenProps<"Modal">) {
         />
         <Text style={styles.title}>Starships:</Text>
         {starships.map((starship) => (
-          <Text key={starship} style={[styles.text, styles.capitalize]}>
+          <Text key={starship} style={styles.capitalize}>
             {starship}
           </Text>
         ))}
@@ -139,6 +145,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   capitalize: {
+    fontSize: 15,
     textTransform: "capitalize",
   },
   separator: {
