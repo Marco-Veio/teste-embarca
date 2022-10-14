@@ -13,16 +13,17 @@ exports[`Card component renders correctly 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
       "flex": 1,
       "height": 400,
-      "justifyContent": "space-evenly",
+      "justifyContent": "space-between",
       "opacity": 1,
       "textAlign": "center",
       "width": 300,
     }
   }
+  testID="cardButton"
 >
   <Text
     style={
@@ -44,60 +45,11 @@ exports[`Card component renders correctly 1`] = `
       ]
     }
   >
-    Luke Skywalker
-  </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#fff",
-        },
-        undefined,
-      ]
-    }
-  >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#000",
-          },
-          Object {
-            "fontSize": 15,
-            "marginBottom": 5,
-            "textAlign": "center",
-          },
-        ]
-      }
-    >
-      Physical Aspects:
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#000",
-          },
-          Object {
-            "textAlign": "center",
-          },
-        ]
-      }
-    >
-      Height: 
-      172
-       cm
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#000",
-          },
-          Object {
-            "textAlign": "center",
-          },
-        ]
+    <Image
+      source={
+        {
+          "uri": "https://starwars-visualguide.com/assets/img/characters/1.jpg",
+        }
       }
     >
       Mass: 
@@ -106,52 +58,171 @@ exports[`Card component renders correctly 1`] = `
     </Text>
     <Text
       style={
-        Array [
-          Object {
-            "color": "#000",
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
           },
-          Object {
-            "textAlign": "center",
-            "textTransform": "capitalize",
+          {
+            "height": undefined,
+            "width": undefined,
           },
         ]
       }
-    >
-      Hair Color: 
-      blond
-    </Text>
-    <Text
+      testID="backgroundImage"
+    />
+    <View
       style={
-        Array [
-          Object {
-            "color": "#000",
+        [
+          {
+            "backgroundColor": "rgba(255,255,255,0.3)",
           },
-          Object {
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "height": 400,
+            "justifyContent": "space-between",
+            "paddingVertical": 20,
             "textAlign": "center",
             "textTransform": "capitalize",
           },
         ]
       }
     >
-      Skin Color: 
-      fair
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#000",
-          },
-          Object {
-            "textAlign": "center",
-            "textTransform": "capitalize",
-          },
-        ]
-      }
-    >
-      Eye Color: 
-      blue
-    </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+            },
+            [
+              {
+                "fontSize": 20,
+                "textTransform": "lowercase",
+              },
+              {
+                "color": "black",
+                "fontFamily": "starjedi",
+                "textShadowColor": "gold",
+                "textShadowRadius": 2,
+              },
+            ],
+          ]
+        }
+      >
+        Luke Skywalker
+      </Text>
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              {
+                "fontSize": 15,
+                "marginBottom": 5,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Physical Aspects:
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              {
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Height: 
+          172
+           cm
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              {
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Mass: 
+          77
+           kg
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              {
+                "textAlign": "center",
+                "textTransform": "capitalize",
+              },
+            ]
+          }
+        >
+          Hair Color: 
+          blond
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              {
+                "textAlign": "center",
+                "textTransform": "capitalize",
+              },
+            ]
+          }
+        >
+          Skin Color: 
+          fair
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              {
+                "textAlign": "center",
+                "textTransform": "capitalize",
+              },
+            ]
+          }
+        >
+          Eye Color: 
+          blue
+        </Text>
+      </View>
+    </View>
   </View>
 </View>
 `;

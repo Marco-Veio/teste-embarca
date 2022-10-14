@@ -11,7 +11,6 @@ import { RootStackScreenProps } from "../types";
 
 export default function HomeScreen({
   navigation,
-  route,
 }: RootStackScreenProps<"Root">) {
   const { people, nextPage, getPeople } = usePeople();
 
@@ -35,8 +34,12 @@ export default function HomeScreen({
           <FlatList
             data={people}
             keyExtractor={(item) => item.name}
-            renderItem={({ item }) => (
-              <Card navigation={navigation} route={route} person={item} />
+            renderItem={({ item, index }) => (
+              <Card
+                person={item}
+                index={index}
+                onPress={() => navigation.navigate("Modal", { person: item })}
+              />
             )}
             horizontal
             showsHorizontalScrollIndicator={false}

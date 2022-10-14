@@ -3,10 +3,7 @@
  * https://reactnavigation.org/docs/typescript/
  */
 
-import {
-  CompositeScreenProps,
-  NavigatorScreenParams,
-} from "@react-navigation/native";
+import { NavigatorScreenParams } from "@react-navigation/native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 declare global {
@@ -17,7 +14,7 @@ declare global {
 
 export type RootStackParamList = {
   Root: NavigatorScreenParams<undefined> | undefined;
-  Modal: undefined;
+  Modal: { person: IPerson };
   NotFound: undefined;
 };
 
