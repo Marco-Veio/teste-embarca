@@ -25,8 +25,25 @@ exports[`Card component renders correctly 1`] = `
   }
   testID="cardButton"
 >
-  <View
-    accessibilityIgnoresInvertColors={true}
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Array [
+          Object {
+            "fontSize": 20,
+          },
+          Object {
+            "color": "black",
+            "fontFamily": "starjedi",
+            "textShadowColor": "gold",
+            "textShadowRadius": 2,
+          },
+        ],
+      ]
+    }
   >
     <Image
       source={
@@ -34,6 +51,12 @@ exports[`Card component renders correctly 1`] = `
           "uri": "https://starwars-visualguide.com/assets/img/characters/1.jpg",
         }
       }
+    >
+      Mass: 
+      77
+       kg
+    </Text>
+    <Text
       style={
         [
           {
@@ -47,7 +70,6 @@ exports[`Card component renders correctly 1`] = `
             "height": undefined,
             "width": undefined,
           },
-          undefined,
         ]
       }
       testID="backgroundImage"
@@ -65,7 +87,7 @@ exports[`Card component renders correctly 1`] = `
             "justifyContent": "space-between",
             "paddingVertical": 20,
             "textAlign": "center",
-            "width": 300,
+            "textTransform": "capitalize",
           },
         ]
       }

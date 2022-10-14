@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageBackground, StyleSheet, TouchableOpacity } from "react-native";
+import { StyleSheet, TouchableOpacity } from "react-native";
 
 import { StyledText } from "./StyledText";
 import { Text, View } from "./Themed";
@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    textTransform: "lowercase",
   },
   subtitle: {
     fontSize: 15,
