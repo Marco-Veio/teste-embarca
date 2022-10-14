@@ -3,13 +3,13 @@
 exports[`StyledText component renders correctly 1`] = `
 <Text
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#000",
       },
-      Array [
+      [
         undefined,
-        Object {
+        {
           "color": "black",
           "fontFamily": "starjedi",
           "textShadowColor": "gold",

@@ -13,7 +13,7 @@ exports[`Card component renders correctly 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
       "flex": 1,
       "height": 400,
@@ -23,40 +23,42 @@ exports[`Card component renders correctly 1`] = `
       "width": 300,
     }
   }
+  testID="cardButton"
 >
   <View
     accessibilityIgnoresInvertColors={true}
   >
     <Image
       source={
-        Object {
+        {
           "uri": "https://starwars-visualguide.com/assets/img/characters/1.jpg",
         }
       }
       style={
-        Array [
-          Object {
+        [
+          {
             "bottom": 0,
             "left": 0,
             "position": "absolute",
             "right": 0,
             "top": 0,
           },
-          Object {
+          {
             "height": undefined,
             "width": undefined,
           },
           undefined,
         ]
       }
+      testID="backgroundImage"
     />
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "rgba(255,255,255,0.3)",
           },
-          Object {
+          {
             "alignItems": "center",
             "flex": 1,
             "height": 400,
@@ -70,16 +72,16 @@ exports[`Card component renders correctly 1`] = `
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#000",
             },
-            Array [
-              Object {
+            [
+              {
                 "fontSize": 20,
                 "textTransform": "lowercase",
               },
-              Object {
+              {
                 "color": "black",
                 "fontFamily": "starjedi",
                 "textShadowColor": "gold",
@@ -93,8 +95,8 @@ exports[`Card component renders correctly 1`] = `
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
             },
             undefined,
@@ -103,11 +105,11 @@ exports[`Card component renders correctly 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#000",
               },
-              Object {
+              {
                 "fontSize": 15,
                 "marginBottom": 5,
                 "textAlign": "center",
@@ -119,11 +121,11 @@ exports[`Card component renders correctly 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#000",
               },
-              Object {
+              {
                 "textAlign": "center",
               },
             ]
@@ -135,11 +137,11 @@ exports[`Card component renders correctly 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#000",
               },
-              Object {
+              {
                 "textAlign": "center",
               },
             ]
@@ -151,11 +153,11 @@ exports[`Card component renders correctly 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#000",
               },
-              Object {
+              {
                 "textAlign": "center",
                 "textTransform": "capitalize",
               },
@@ -167,11 +169,11 @@ exports[`Card component renders correctly 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#000",
               },
-              Object {
+              {
                 "textAlign": "center",
                 "textTransform": "capitalize",
               },
@@ -183,11 +185,11 @@ exports[`Card component renders correctly 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#000",
               },
-              Object {
+              {
                 "textAlign": "center",
                 "textTransform": "capitalize",
               },

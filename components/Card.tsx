@@ -4,22 +4,21 @@ import { ImageBackground, StyleSheet, TouchableOpacity } from "react-native";
 import { StyledText } from "./StyledText";
 import { Text, View } from "./Themed";
 
-import { RootStackScreenProps } from "../types";
+import { useNavigation } from "@react-navigation/native";
 
-interface Props extends Partial<RootStackScreenProps<"Root">> {
+interface Props {
   person: IPerson;
   index: number;
+  onPress: () => void;
 }
 
-export function Card({ person, index, navigation }: Props) {
+export function Card({ person, index, onPress }: Props) {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity
-      onPress={() => {
-        navigation?.navigate("Modal", { person });
-      }}
-      style={styles.root}
-    >
+    <TouchableOpacity testID="cardButton" onPress={onPress} style={styles.root}>
       <ImageBackground
+        testID="backgroundImage"
         source={{
           uri: `https://starwars-visualguide.com/assets/img/characters/${
             index + (index > 15 ? 2 : 1)

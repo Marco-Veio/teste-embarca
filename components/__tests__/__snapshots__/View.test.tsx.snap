@@ -3,8 +3,8 @@
 exports[`View component renders correctly 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "backgroundColor": "#fff",
       },
       undefined,
@@ -13,8 +13,8 @@ exports[`View component renders correctly 1`] = `
 >
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#000",
         },
         undefined,
