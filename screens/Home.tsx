@@ -24,7 +24,8 @@ export default function HomeScreen({
         lightColor="rgba(255,255,255,0.8)"
         darkColor="rgba(0,0,0,0.8)"
       >
-        <StyledText style={styles.title}>Star Wars</StyledText>
+        <StyledText style={styles.title}>Star</StyledText>
+        <StyledText style={styles.title}>Wars</StyledText>
         <View
           style={styles.separator}
           lightColor="#eee"
@@ -66,6 +67,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
+    textTransform: "lowercase",
+    marginTop: -30,
   },
   separator: {
     marginVertical: 30,
@@ -74,6 +77,6 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     height: "60%",
-    width: "80%",
+    width: "85%",
   },
 });
