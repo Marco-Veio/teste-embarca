@@ -4,8 +4,6 @@ import { ImageBackground, StyleSheet, TouchableOpacity } from "react-native";
 import { StyledText } from "./StyledText";
 import { Text, View } from "./Themed";
 
-import { useNavigation } from "@react-navigation/native";
-
 interface Props {
   person: IPerson;
   index: number;
@@ -13,8 +11,6 @@ interface Props {
 }
 
 export function Card({ person, index, onPress }: Props) {
-  const navigation = useNavigation();
-
   return (
     <TouchableOpacity testID="cardButton" onPress={onPress} style={styles.root}>
       <ImageBackground
@@ -54,7 +50,7 @@ export function Card({ person, index, onPress }: Props) {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    height: 400,
+    height: "100%",
     width: 300,
     alignItems: "center",
     justifyContent: "space-between",
@@ -62,7 +58,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    height: 400,
+    height: "100%",
     width: 300,
     alignItems: "center",
     justifyContent: "space-between",
